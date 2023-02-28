@@ -1,0 +1,233 @@
+:root{
+    --clr-primary-100: linear-gradient( to right, hsl(6,100%,80%), hsl(335,100%,65%));
+
+    --clr-neutral-100: hsl(243, 100%, 93%);
+    --clr-neutral-200: hsl(229, 7%, 55%);
+    --clr-neutral-300: hsl(228, 56%, 26%);
+    --clr-neutral-400: hsl(229, 57%, 11%);
+
+    --ff-active: 'Raleway';
+
+    --fw-regular:400;
+    --fw-bold:700; 
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+*{  margin: 0;
+    padding: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+html,
+body{
+    height: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+body{
+    background-color: var(--clr-neutral-400);
+    font-weight: var(--fw-regular);
+    font-family: var(--ff-active);
+    color: #fff;
+    background: url(./images/bg-mobile.png);
+    background-repeat: no-repeat;
+}
+
+.showcase {
+    overflow: hidden;
+    margin: 0 1.5rem;
+}
+
+.header__wrap {
+    overflow: hidden;
+    margin-top: 10rem;
+    margin-right: 1.5rem;
+    padding-left: 2rem;
+    background: var(--clr-neutral-300);
+    border-radius: 0px 6rem 0px 0px;
+}
+
+.img__wrap{
+    padding-top: 3rem;
+}
+
+.files {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2.5rem;
+}
+.files img{
+    background: var(--clr-neutral-400);
+    padding: .7rem;
+    border-radius: .6rem;
+}
+
+.body__wrap {
+    margin-top: 1rem;
+    background: var(--clr-neutral-300);
+    margin-right: 1.5rem;
+    background: var(--clr-neutral-300);
+    margin-bottom: 3rem;
+    border-radius: 1rem;
+    display: grid;
+}
+
+.information {
+    text-align: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1.5rem;
+}
+
+.num__wrap {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: .5rem;
+}
+
+.comment{
+    background: #fff;
+    color: black;
+    width: 40%;
+    position: absolute;
+    margin-top: 9rem;
+    text-align: center;
+    padding: .9rem;
+    border-radius: .5rem;
+    font-size: 24px;
+}
+
+.com__wrap{
+    display: flex;
+    justify-content: center;
+}
+
+.thumb__wrap{
+    background: var(--clr-neutral-400);
+    margin: 0 2.5rem;
+    border-radius: .5rem;
+    margin-top: 1rem;
+    padding: .15rem .2rem;
+}
+
+.thumb{
+    background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    margin-right: 4rem;
+    background-repeat: no-repeat;
+    height: 2vh;
+    border-radius: .5rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.dot{
+    height: 2vh;
+    background: #fff;
+    width: 7%;
+    /* margin-left: 10.3rem; */
+    border-radius: 50%;
+}
+
+span{
+    color: var(--clr-neutral-200);
+    font-size: 12px;
+}
+
+.attribution{ 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media(min-width: 500px){
+    body{
+        margin-left: 10rem;
+        background: var(--clr-neutral-400);
+        background-image: url(./images/bg-desktop.png);
+        background-repeat: no-repeat;
+        background-position-y: bottom;
+    }
+
+    .container{
+        /* display: flex;
+        overflow: hidden;
+        align-items: end; */
+        display: grid;
+        grid-template-columns: .3fr .3fr;
+    }
+
+    .comment{
+        border-bottom-right-radius: 0;
+        max-width: 7%;
+        margin-top: 1px;
+        margin-left: 37rem;
+        margin-bottom: 3rem;
+    }
+
+    /* .com__wrap{
+        display: flex;
+        justify-content: end;
+
+    } */
+
+    .wrap{
+        display: grid;
+    }
+
+    .dot{
+        width: 4%;
+        margin-right: 2px;
+        margin-top: 1.5px;
+        height: 1.5vh;
+    }
+
+    .header__wrap{
+        padding-right: 8rem;
+        /* height: 40vh; */
+    }
+    .information{
+        margin-top: 3px;
+    }
+
+    .wrap{
+        margin-top: 12.5rem;
+    }
+
+    .body__wrap{
+        margin-top: 2.2rem;
+        width: 140%;
+        /* margin-left: 5rem; */
+    }
+
+    footer{
+        margin-top: 10rem;
+    }
+
+}
